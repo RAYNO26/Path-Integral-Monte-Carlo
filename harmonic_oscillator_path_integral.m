@@ -208,7 +208,7 @@ function G = compute_G(x,n,N)
 
     A = eye(N);
     B = circshift(A, [0, n]); 
-    G = ((x.^1)' * B * (x.^1)) ./ N;
+    G = x' * B * x/ N;
 
 end
   
