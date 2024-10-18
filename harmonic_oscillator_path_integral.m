@@ -23,7 +23,7 @@ function [acceptance_ratio,elapsed_time]=main(setup)
                    '1000',...
                    '1.4',...
                    '0.5',...
-                   '1'};     
+                   '4'};     
     else
         default=setup;        
     end
@@ -104,7 +104,7 @@ function [teo,plotted]=plotting(d_E,N,a)
     % Also sets the options for the figure
     % It returns the plot's labels
 
-    %d_E are the energy gaps measured
+    % d_E are the energy gaps measured
     % N is the lattice size
     % a is the lattice spacing
 
